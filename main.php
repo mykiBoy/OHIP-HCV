@@ -16,7 +16,6 @@ include 'loadkeystore.php';
 // create responseObj to as the output of this API
 $responseObj = new stdClass();
 global $responseObj;
-$responseObj->error = false;
 
 function loadbody($healthcard,$versionCode,$serviceCode) {
 
@@ -333,6 +332,7 @@ function buildresponseObj($decryptedResult) {
   $responseObj->feeServiceResponseCode = (string)$xml->results->feeServiceDetails->feeServiceResponseCode;
   $responseObj->feeServiceResponseDescription = (string)$xml->results->feeServiceDetails->feeServiceResponseDescription;
 
+  $responseObj->error = false;
 }
 // echo "\n\n";
 // print_r($responseObj); // for debugging
