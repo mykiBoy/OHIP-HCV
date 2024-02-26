@@ -36,3 +36,6 @@ openssl pkcs12 -in testStore.p12 -out publicCertificate.pem -nokeys
 Copy the plain text from publicCertificate.pem and paste it to replace the certificate wrapped by the "<wsse:BinarySecurityToken>" tag.
 
 Last but not least, don't forget to replace the credentials in the php code with your own conformance testing key, username, password and MOH ID. Otherwise you will get an authorization fault for using invalid credentials.
+
+I passed the MOH web service conformance testing in 2023 and now I'm on the approved software vendor list.
+https://www.ontario.ca/page/ohip-publications-medical-claims-and-health-card-validation#accordion-content-2:~:text=Dr.%20Yang-,LightEMR,-1.0
